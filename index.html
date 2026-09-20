@@ -40,52 +40,61 @@
 	<div class="fa fa-user" id="login-btn"></div>
 </div>
 
-<form class="search-form">
-	<input type="search" id="search-box" placeholder="search here.....">
-	<label for="search-box" class="fa fa-search"></label>
+<form class="search-form" id="search-form">
+    <input type="search" id="search-box" placeholder="search here.....">
+    <label for="search-box" class="fa fa-search"></label>
 </form>
 
+<div class="shopping-cart" id="shopping-cart">
 
-<div class="shopping-cart">
-	<div class="box">
-		<i class="fa fa-trash"></i>
-		<img src="image/watermelon1.jpg">
-<div class="content">
-	<h3>watermelon</h3>
-	<span class="price">$5.9</span>
-	<span class="quantity">Qty : 1</span>
+    <div id="cart-items">
+        <!-- Cart items will appear here -->
+    </div>
+
+    <div class="total" id="cart-total">
+        total : $0/-
+    </div>
+
+   <a href="#" class="btn" id="checkout-btn">Checkout</a>
+
+<div id="checkout-form" style="display: none;">
+    <input
+        type="text"
+        id="shipping-address"
+        placeholder="Enter shipping address"
+        class="box"
+    >
+
+    <button class="btn" id="place-order-btn">
+        Place Order
+    </button>
+</div>
 
 </div>
-	</div>
 
-<div class="box">
-		<i class="fa fa-trash"></i>
-		<img src="image/potatoes.jpg">
-<div class="content">
-	<h3>potatoes</h3>
-	<span class="price">$8.1</span>
-	<span class="quantity">Qty : 1</span>
+<form class="login-form" id="login-form">
+    <h3>login now</h3>
 
-</div>
-	</div>
+    <input
+        type="email"
+        placeholder="your email"
+        class="box"
+        id="login-email"
+        required
+    >
 
+    <input
+        type="password"
+        placeholder="your password"
+        class="box"
+        id="login-password"
+        required
+    >
 
-<div class="total">total : $14.0/- </div>
-<a href="#" class="btn">Checkout</a>
-	
-	</div>
+    <p>Forget Your Password <a href="#">Click Here</a></p>
+    <p>Don't Have Account <a href="#">Create Now</a></p>
 
-
-<form action="#" class="login-form">
-	<h3>login now</h3>
-	<input type="email" placeholder ="your email" class="box">
-	<input type="password" placeholder ="your password" class="box">
-
-<p>Forget Your Password <a href="#"> Click Here</a></p>
-<p>Don't Have Account <a href="#"> Crete Now</a></p>
-
-
-	<input type="submit" value="Login Now" class="btn">
+    <input type="submit" value="Login Now" class="btn">
 </form>
 
 
@@ -98,7 +107,7 @@
 <section class="home" id="home">
 	<div class="content">
 		<h3>Fresh And  <span >Organic</span> Products For You</h3>
-		<p>This Website Is Designed By Divya Chauhan , cseaiml btech 2nd year student this website is based on ecommerce online grocery.</p>
+		<p>This Website Is Designed By Divya Chauhan , cseaiml btech this website is based on ecommerce online grocery.</p>
 
 		<a href="#" class="btn">Shop Now</a>
 	</div>
@@ -148,8 +157,6 @@
 	</div>
 
 
-
-
 </div>
 
 </section>
@@ -164,7 +171,7 @@
 
 <div class="box-container">
 		
-			<div class="box">
+			<div class="box-container" id="product-container">
 				<img src="image\carrot.jpg">
 				<h1>fresh carrot</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -178,7 +185,7 @@
 				</div>
 				<a href="" class="btn">add to cart</a>
 		</div>
-			<div class="box">
+			<div class="box-container" id="product-container">
 				<img src="image\ginger.jpg">
 				<h1>fresh ginger</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -192,8 +199,7 @@
 				</div>
 				<a href="" class="btn">add to cart</a>
 		</div>
-
-	<div class="box">
+<div class="box-container" id="product-container">
 				<img src="image\lemons many.jpg">
 				<h1>fresh lemons</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -209,7 +215,7 @@
 
 
 
-			<div class="box">
+			<div class="box-container" id="product-container">
 				<img src="image\tomatoes.jpg">
 				<h1>fresh tomatoes</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -223,9 +229,7 @@
 				</div>
 				<a href="" class="btn">add to cart</a>
 		</div>
-
-
-			<div class="box">
+<div class="box-container" id="product-container">
 				<img src="image\avacoda.jpg">
 				<h1>fresh avacoda</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -241,8 +245,7 @@
 		</div>
 
 
-
-		<div class="box">
+<div class="box-container" id="product-container">
 				<img src="image\all fruits.jpg">
 				<h1>fresh fruits</h1>
 				<div class="price"> $12.99/- -15.99</div>
@@ -518,5 +521,6 @@
 
 
 <script src="js/script.js"></script>
+<script src="js/api.js"></script>
 </body>
 </html>

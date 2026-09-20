@@ -182,7 +182,7 @@ box-shadow:var(--box-shadow);
   text-transform: none;
   font-size: 1.6rem;
   color: var(--black);
-  pading:0 1.5rem;
+  padding:0 1.5rem;
 }
 
 .header .search-form .label
@@ -747,7 +747,7 @@ padding: 1rem 0;
   border-radius: .5rem;
   font-size: 2rem;
   color: var(--black);
-  margin-left.2rem;
+  margin-left:1.2rem;
   background: #eee;
   text-align: center;
 
