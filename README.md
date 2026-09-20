@@ -1,27 +1,49 @@
-# grocery-ecommerce-website
-A front-end grocery e-commerce website built using HTML, CSS, and JavaScript. This project focuses on UI design and is not connected to any backend or database.
-# Grocery E-commerce Website (Front-End Only)
+# CodeAlpha Grocery Store
 
-This is a front-end grocery e-commerce website built using HTML, CSS, and JavaScript. This project focuses on user interface (UI) design.
-
-## Important Note
-This is a UI-only project. It is not connected to any backend, server, or database.
+A full-stack grocery store web application developed as part of my CodeAlpha Full Stack Development Internship.
 
 ## Features
-- Modern grocery website design
-- Product display section
-- Add to cart button (UI only)
-- Customer review section
-- Responsive layout
+
+- User Registration and Login
+- JWT Authentication
+- Products loaded from MongoDB
+- Add products to cart
+- Update cart quantity
+- Remove products from cart
+- Checkout with shipping address
+- Order placement
+- Automatic stock management
+- Order data stored in MongoDB
 
 ## Technologies Used
+
+### Frontend
 - HTML
 - CSS
 - JavaScript
 
-## How to run
-1. Download the project
-2. Open index.html in browser
+### Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
 
-## Author
-Divya Chauhan
+## Project Structure
+
+```text
+CodeAlpha_GroceryStore/
+├── index.html
+├── css/
+├── js/
+├── image/
+└── backend/
+    ├── server.js
+    ├── package.json
+    ├── seed.js
+    ├── config/
+    ├── models/
+    ├── routes/
+    ├── controllers/
+    └── middleware/
