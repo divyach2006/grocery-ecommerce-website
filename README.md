@@ -47,3 +47,18 @@ CodeAlpha_GroceryStore/
     ├── routes/
     ├── controllers/
     └── middleware/
+How to Run
+1. Clone the repository.
+2. Open the project in VS Code.
+3. Open the backend folder in the terminal.
+4. Install dependencies:
+npm install
+5. Create a .env file inside the backend folder with your MongoDB connection string and JWT secret.
+6. Start the server:
+node server.js
+7. Open:
+http://localhost:5000
+Internship
+This project was developed as part of my Full Stack Development Internship at CodeAlpha.
+Author
+Divya Chauhan
